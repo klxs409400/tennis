@@ -5,6 +5,7 @@
 **Node.js** — JavaScript running on your machine (not in a browser). Built on Chrome's V8 engine. Single-threaded, but handles I/O (network, files) asynchronously via libuv.
 
 **npm** — downloads libraries. `package.json` is the project manifest.
+
 - `dependencies` → needed at runtime (Express)
 - `devDependencies` → needed only during development (TypeScript, ts-node-dev)
 
@@ -40,6 +41,7 @@
 ## Code to write
 
 **`tsconfig.json`** (in `backend/`)
+
 ```json
 {
   "compilerOptions": {
@@ -54,22 +56,24 @@
 ```
 
 **`src/index.ts`**
+
 ```ts
-import express from 'express'
+import express from "express";
 
-const app = express()
-const PORT = 3000
+const app = express();
+const PORT = 3000;
 
-app.get('/health', (req, res) => {
-  res.json({ status: 'ok' })
-})
+app.get("/health", (req, res) => {
+  res.json({ status: "ok" });
+});
 
 app.listen(PORT, () => {
-  console.log(`Server running on http://localhost:${PORT}`)
-})
+  console.log(`Server running on http://localhost:${PORT}`);
+});
 ```
 
 **`package.json` scripts**
+
 ```json
 "scripts": {
   "dev": "ts-node-dev --respawn src/index.ts",
@@ -83,5 +87,6 @@ app.listen(PORT, () => {
 ## Interview questions to answer today
 
 1. What is Node.js? Is it single-threaded?
+
 2. What does TypeScript give you over JavaScript?
 3. Difference between `dependencies` and `devDependencies`?

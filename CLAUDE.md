@@ -4,7 +4,14 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project
 
-Tennis Training Log — a full-stack web app where users can log tennis training sessions, view session history, and get AI-generated coaching feedback via the Anthropic API. The 13-day build plan lives in `name.md`.
+Tennis Training Log — a full-stack web app where users can log tennis training sessions, view session history, and get AI-generated coaching feedback via the Anthropic API. The full learning plan lives in `plan.md`; per-day notes live in `notes/`.
+
+| Unit   | Days     | Topic           |
+|--------|----------|-----------------|
+| Unit 1 | Days 1–6 | CRUD Foundation |
+| Unit 2 | Days 1–3 | Authentication  |
+| Unit 3 | Days 1–2 | AI Integration  |
+| Unit 4 | Days 1–2 | Deployment      |
 
 ## Stack
 
